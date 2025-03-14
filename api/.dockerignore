@@ -1,0 +1,40 @@
+# Excluded files
+/.docker
+/.idea
+/.vscode
+/.git
+/public/storage
+/bootstrap/cache/*
+/storage/app/*
+/storage/framework/views/*
+/storage/logs/*
+/tests
+/vendor
+.dockerignore
+.env.*
+.editorconfig
+.gitattributes
+.gitignore
+docker-compose.*.yml
+docker-compose.yml
+Makefile
+
+# Included files
+# Bug. Wildcard for dev and prod is not working
+!/.docker/dev/app/conf.d
+!/.docker/dev/app/php-fpm.d
+!/.docker/dev/base/conf.d
+!/.docker/dev/base/php.ini
+!/.docker/dev/gateway/conf.d
+!/.docker/dev/gateway/nginx.conf
+!/.docker/dev/mysql/dumps
+!/.docker/dev/schedule/cron.d
+
+!/.docker/prod/app/conf.d
+!/.docker/prod/app/php-fpm.d
+!/.docker/prod/base/conf.d
+!/.docker/prod/base/php.ini
+!/.docker/prod/gateway/conf.d
+!/.docker/prod/gateway/nginx.conf
+!/.docker/prod/mysql/dumps
+!/.docker/prod/schedule/cron.d
